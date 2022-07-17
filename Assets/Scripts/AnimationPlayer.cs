@@ -18,11 +18,12 @@ public class AnimationPlayer : MonoBehaviour
         _spriteRenderer = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
         _playerControl = GetComponent<PlayerControl>();
-        _movment = _playerControl.Movment;
     }
 
     private void Update()
     {
+        _movment = _playerControl.Movment;
+
         if (_movment != 0)
         {
             _animator.SetFloat(_speedAnimator, 1);
