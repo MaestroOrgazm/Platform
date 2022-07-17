@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moneycollection : MonoBehaviour
+public class MoneyCollector : MonoBehaviour
 {
     private int _countMoney = 0;
 

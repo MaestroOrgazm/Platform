@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KillPlayer : MonoBehaviour
+public class PlayerDead : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.TryGetComponent(out Moneycollection moneycollection))
+        if (collision.collider.TryGetComponent(out MoneyCollector moneyCollector))
         {
             Debug.Log("Поражение");
-            Destroy(moneycollection.gameObject);
+            Destroy(moneyCollector.gameObject);
         }
     }
 }
