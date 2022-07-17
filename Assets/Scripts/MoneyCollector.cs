@@ -11,7 +11,6 @@ public class MoneyCollector : MonoBehaviour
         if (collision.collider.TryGetComponent(out CircleCollider2D circleCollider2D))
         {
             _countMoney++;
-            Debug.Log("Монеток - " + _countMoney);
             Destroy(circleCollider2D.gameObject);
         }
     }
